@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * 
+ * 
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,13 +29,13 @@ namespace Channel
                 }
                 else
                 {
-                    Monitor.Exit(buffer);
                     Monitor.PulseAll(buffer);
+                    Monitor.Exit(buffer);
                     Thread.Sleep(50);
                 }
             }
-            Monitor.Exit(buffer);
             Monitor.PulseAll(buffer);
+            Monitor.Exit(buffer);
             return result;
         }
 
@@ -49,8 +53,8 @@ namespace Channel
                     }
                     else
                     {
-                        Monitor.Exit(buffer);
                         Monitor.PulseAll(buffer);
+                        Monitor.Exit(buffer);
                         Thread.Sleep(50);
                     }
                 }
@@ -60,8 +64,8 @@ namespace Channel
                 Monitor.Enter(buffer);
                 buffer.Enqueue(value);
             }
-            Monitor.Exit(buffer);
             Monitor.PulseAll(buffer);
+            Monitor.Exit(buffer);
         }
 
         public Channel()
