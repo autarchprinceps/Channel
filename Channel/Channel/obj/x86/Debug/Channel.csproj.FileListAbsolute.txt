@@ -3,3 +3,5 @@ E:\ITZeug\github\Channel\Channel\Channel\bin\Debug\Channel.pdb
 E:\ITZeug\github\Channel\Channel\Channel\obj\x86\Debug\Channel.exe
 E:\ITZeug\github\Channel\Channel\Channel\obj\x86\Debug\Channel.pdb
 E:\ITZeug\github\Channel\Channel\Channel\obj\x86\Debug\Channel.csprojResolveAssemblyReference.cache
+C:\Users\autarch\Documents\GitHub\Channel\Channel\Channel\obj\x86\Debug\Channel.exe
+C:\Users\autarch\Documents\GitHub\Channel\Channel\Channel\obj\x86\Debug\Channel.pdb
