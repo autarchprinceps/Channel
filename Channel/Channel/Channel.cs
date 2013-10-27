@@ -64,14 +64,9 @@ namespace Channel
             Monitor.Exit(buffer);
         }
 
-        public Channel()
+        public Channel(int MaxSize = 1)
         {
-            buffer = new Queue<T>();
-        }
-
-        public Channel(int MaxSize)
-        {
-            limited = true;
+            limited = MaxSize == 0;
             buffer = new Queue<T>(MaxSize);
             max = MaxSize;
         }
